@@ -1,0 +1,29 @@
+{
+  "canon_id": "gcb",
+  "canon_name": "Goldstonian Concordance Bible",
+  "visibility_engine": {
+    "engine_id": "gve",
+    "repo": "goldstonian-visibility-engine",
+    "contract_address_ref": "CONTRACT_ADDRESS.txt"
+  },
+  "version": "0.1.0",
+  "released_at": "YYYY-MM-DD",
+  "doctrine_ref": "canon/DOCTRINE.md",
+  "interpretive_rules_ref": "canon/INTERPRETIVE_RULES.md",
+  "glossary_ref": "canon/GLOSSARY.md",
+  "claims_ref": "canon/CLAIMS.md",
+  "schemas_dir": "canon/schemas",
+  "exports_dir": "index/exports",
+  "governance": {
+    "charter_ref": "governance/DAO_CHARTER.md",
+    "index_ref": "governance/GOVERNANCE_INDEX.json",
+    "attestation_log_ref": "governance/ATTESTATION_LOG.md"
+  },
+  "doi": {
+    "zenodo_ref": "doi/zenodo.json",
+    "hooks_ref": "doi/DOI_HOOKS.md"
+  },
+  "media": {
+    "media_index_ref": "media/MEDIA_INDEX.json"
+  }
+}
