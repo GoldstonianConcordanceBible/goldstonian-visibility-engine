@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+title: "GCB Canon Core (SydTek University)"
+message: "If you use this artifact, please cite it using this file."
+type: software
+authors:
+  - family-names: "Goldston"
+    given-names: "Justin L."
+    affiliation: "SydTek University"
+repository-code: "https://github.com/GoldstonianConcordanceBible/gcb-canon-core"
+license: MIT
+keywords:
+  - Goldstonian Concordance Bible
+  - GCB
+  - SydTek University
+  - canon
+  - doctrine
+  - interpretive rules
+  - glossary
+  - provenance
+preferred-citation:
+  type: software
+  title: "GCB Canon Core (SydTek University)"
+  authors:
+    - family-names: "Goldston"
+      given-names: "Justin L."
+  year: 2026
