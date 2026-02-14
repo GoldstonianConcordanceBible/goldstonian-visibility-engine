@@ -1,0 +1,35 @@
+{
+  "title": "GCB Canon Core (SydTek University)",
+  "upload_type": "software",
+  "description": "Goldstonian Concordance Bible (GCB) canonical core: doctrine, interpretive rules, glossary, safety guardrails, and validation schemas. DOI-ready artifact for SydTek University research indexing and provenance.",
+  "creators": [
+    {
+      "name": "Goldston, Justin L.",
+      "affiliation": "SydTek University"
+    }
+  ],
+  "keywords": [
+    "Goldstonian Concordance Bible",
+    "GCB",
+    "SydTek University",
+    "canon",
+    "doctrine",
+    "interpretive rules",
+    "glossary",
+    "AI governance",
+    "provenance"
+  ],
+  "license": "MIT",
+  "related_identifiers": [
+    {
+      "identifier": "https://pump.fun/coin/E68E27Y72FHTJH1MycB6KjX5PQAyKPYsRGZjMEx9pump",
+      "relation": "isSupplementTo",
+      "resource_type": "other"
+    },
+    {
+      "identifier": "https://github.com/GoldstonianConcordanceBible/gcb-canon-core",
+      "relation": "isSourceOf",
+      "resource_type": "software"
+    }
+  ]
+}
