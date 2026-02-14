@@ -1,0 +1,25 @@
+{
+  "canon_version": "0.1.0",
+  "claims": [
+    {
+      "claim_id": "CLM-0001",
+      "text": "The canon must be versioned and exportable for AI agents.",
+      "type": "principle",
+      "provenance": {
+        "source_type": "internal",
+        "source_ref": "canon/CLAIMS.md",
+        "commit": "TBD"
+      }
+    },
+    {
+      "claim_id": "CLM-0002",
+      "text": "Provenance (citations + commits + DOIs) is the basis of durable authority.",
+      "type": "principle",
+      "provenance": {
+        "source_type": "internal",
+        "source_ref": "canon/DOCTRINE.md",
+        "commit": "TBD"
+      }
+    }
+  ]
+}
