@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GCB Citation",
+  "type": "object",
+  "required": ["citation_id", "type", "title"],
+  "properties": {
+    "citation_id": { "type": "string" },
+    "type": { "type": "string", "enum": ["book", "article", "web", "dataset", "video", "other"] },
+    "title": { "type": "string" },
+    "authors": { "type": "array", "items": { "type": "string" } },
+    "year": { "type": "integer" },
+    "publisher": { "type": "string" },
+    "doi": { "type": "string" },
+    "url": { "type": "string" },
+    "accessed_utc": { "type": "string" },
+    "quote_max_25_words": { "type": "string" },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "repo": { "type": "string" },
+        "commit": { "type": "string" },
+        "timestamp_utc": { "type": "string" }
+      }
+    }
+  }
+}
