@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GCB Glossary Term",
+  "type": "object",
+  "required": ["term", "definition"],
+  "properties": {
+    "term": { "type": "string" },
+    "definition": { "type": "string" },
+    "operational_checks": { "type": "array", "items": { "type": "string" } },
+    "examples": { "type": "array", "items": { "type": "string" } },
+    "status": { "type": "string", "enum": ["canonical", "deprecated", "draft"], "default": "canonical" }
+  }
+}
