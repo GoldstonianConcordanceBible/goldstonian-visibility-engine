@@ -1,0 +1,14 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Citation Schema",
+  "type": "object",
+  "required": ["citation_id", "title"],
+  "properties": {
+    "citation_id": { "type": "string" },
+    "title": { "type": "string" },
+    "author": { "type": "string" },
+    "year": { "type": "string" },
+    "doi": { "type": "string" },
+    "url": { "type": "string" }
+  }
+}
