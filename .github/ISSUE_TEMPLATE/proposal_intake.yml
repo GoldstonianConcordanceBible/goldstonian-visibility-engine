@@ -1,0 +1,21 @@
+name: Governance Proposal
+description: Submit a governance proposal
+title: "[PROPOSAL] "
+labels: ["governance"]
+body:
+  - type: input
+    id: proposal_id
+    attributes:
+      label: Proposal ID
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation (Mirror)
+  - type: textarea
+    id: decision
+    attributes:
+      label: Decision (Fire)
