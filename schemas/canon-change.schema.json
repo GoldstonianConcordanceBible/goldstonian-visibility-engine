@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GCB Canon Change Object",
+  "type": "object",
+  "required": ["change_id", "type", "summary", "files", "rationale", "attestation_required"],
+  "properties": {
+    "change_id": { "type": "string" },
+    "type": {
+      "type": "string",
+      "enum": ["doctrine_change", "interpretive_rules_change", "glossary_change", "schema_change", "metadata_change"]
+    },
+    "summary": { "type": "string" },
+    "files": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string" }
+    },
+    "rationale": {
+      "type": "object",
+      "required": ["mirror", "water", "fire"],
+      "properties": {
+        "mirror": { "type": "string" },
+        "water": { "type": "string" },
+        "fire": { "type": "string" }
+      }
+    },
+    "compatibility_notes": { "type": "string" },
+    "attestation_required": { "type": "boolean" },
+    "proposal_ref": { "type": "string" }
+  }
+}
