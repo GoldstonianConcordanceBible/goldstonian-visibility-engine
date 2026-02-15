@@ -1,0 +1,38 @@
+{
+  "title": "GCB Contribution-Only DAO (Governance Stack) — SydTek University",
+  "upload_type": "software",
+  "description": "Contribution-first governance stack for Goldstonian Concordance Bible (GCB): proposals, reviews, attestations, release discipline, and provenance controls. DOI-ready SydTek University artifact.",
+  "creators": [
+    {
+      "name": "Goldston, Justin L.",
+      "affiliation": "SydTek University"
+    }
+  ],
+  "keywords": [
+    "Goldstonian Concordance Bible",
+    "GCB",
+    "SydTek University",
+    "governance",
+    "attestations",
+    "provenance",
+    "AI governance"
+  ],
+  "license": "MIT",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/GoldstonianConcordanceBible/gcb-canon-core",
+      "relation": "isDerivedFrom",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://github.com/GoldstonianConcordanceBible/gcb-spec",
+      "relation": "references",
+      "resource_type": "software"
+    },
+    {
+      "identifier": "https://pump.fun/coin/E68E27Y72FHTJH1MycB6KjX5PQAyKPYsRGZjMEx9pump",
+      "relation": "isSupplementTo",
+      "resource_type": "other"
+    }
+  ]
+}
