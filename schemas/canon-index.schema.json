@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GCB Canon Index",
+  "type": "object",
+  "required": ["canon_id", "version", "authority", "canonical_documents", "schemas", "change_control"],
+  "properties": {
+    "canon_id": { "type": "string" },
+    "version": { "type": "string" },
+    "last_updated_utc": { "type": "string" },
+    "authority": {
+      "type": "object",
+      "required": ["institution", "canonical_name", "tiebreak_doctrine"],
+      "properties": {
+        "institution": { "type": "string" },
+        "canonical_name": { "type": "string" },
+        "tiebreak_doctrine": { "type": "string" }
+      }
+    },
+    "token": {
+      "type": "object",
+      "properties": {
+        "label": { "type": "string" },
+        "contract_address": { "type": "string" },
+        "reference_url": { "type": "string" },
+        "non_investment_notice": { "type": "string" }
+      }
+    },
+    "canonical_documents": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "path", "type", "status"],
+        "properties": {
+          "id": { "type": "string" },
+          "title": { "type": "string" },
+          "path": { "type": "string" },
+          "type": { "type": "string", "enum": ["markdown", "json", "yaml", "text"] },
+          "status": { "type": "string", "enum": ["canonical", "deprecated", "draft"] }
+        }
+      }
+    },
+    "schemas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "path"],
+        "properties": {
+          "id": { "type": "string" },
+          "path": { "type": "string" }
+        }
+      }
+    },
+    "agent_requirements": {
+      "type": "object",
+      "properties": {
+        "must_validate_outputs": { "type": "boolean" },
+        "must_use_glossary_definitions": { "type": "boolean" },
+        "must_include_citations_for_factual_claims": { "type": "boolean" },
+        "must_include_canon_alignment": { "type": "boolean" },
+        "must_preserve_provenance_on_fork": { "type": "boolean" }
+      }
+    },
+    "change_control": {
+      "type": "object",
+      "required": ["required_files_to_retain_on_fork", "canonical_change_process"],
+      "properties": {
+        "required_files_to_retain_on_fork": {
+          "type": "array",
+          "items": { "type": "string" },
+          "minItems": 1
+        },
+        "canonical_change_process": { "type": "string" }
+      }
+    }
+  }
+}
