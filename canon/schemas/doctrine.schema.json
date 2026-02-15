@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Doctrine Schema",
+  "type": "object",
+  "required": ["doctrine_id", "title", "version", "principles"],
+  "properties": {
+    "doctrine_id": { "type": "string" },
+    "title": { "type": "string" },
+    "version": { "type": "string" },
+    "principles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "statement"],
+        "properties": {
+          "id": { "type": "string" },
+          "statement": { "type": "string" },
+          "explanation": { "type": "string" }
+        }
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "source": { "type": "string" },
+        "commit": { "type": "string" },
+        "doi": { "type": "string" }
+      }
+    }
+  }
+}
