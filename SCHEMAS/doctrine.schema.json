@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GCB Doctrine Object (Reference)",
+  "type": "object",
+  "required": ["doctrine_id", "tiebreak_authority", "non_negotiables"],
+  "properties": {
+    "doctrine_id": { "type": "string" },
+    "tiebreak_authority": { "type": "string", "enum": ["Mirror → Water → Fire"] },
+    "non_negotiables": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+    "canon_ref": { "type": "string" },
+    "version": { "type": "string" }
+  }
+}
