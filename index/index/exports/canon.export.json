@@ -1,0 +1,31 @@
+{
+  "canon_id": "gcb",
+  "canon_version": "0.1.0",
+  "released_at": "YYYY-MM-DD",
+  "contract_address_ref": "CONTRACT_ADDRESS.txt",
+  "refs": {
+    "canon_index": "canon/CANON_INDEX.json",
+    "doctrine": "canon/DOCTRINE.md",
+    "interpretive_rules": "canon/INTERPRETIVE_RULES.md",
+    "glossary": "canon/GLOSSARY.md",
+    "claims": "canon/CLAIMS.md",
+    "governance_charter": "governance/DAO_CHARTER.md",
+    "governance_index": "governance/GOVERNANCE_INDEX.json",
+    "attestation_log": "governance/ATTESTATION_LOG.md",
+    "media_index": "media/MEDIA_INDEX.json",
+    "doi_hooks": "doi/DOI_HOOKS.md",
+    "zenodo_metadata": "doi/zenodo.json"
+  },
+  "release": {
+    "git_tag": "v0.1.0",
+    "zenodo_doi": "TBD",
+    "figshare_doi": "TBD",
+    "osf_registration": "TBD",
+    "dataverse_persistent_id": "TBD"
+  },
+  "summary": {
+    "purpose": "A versioned canon + exports system for provenance-based visibility infrastructure.",
+    "governance": "Contribution-only governance with proposals, reviews, merges, and attestations.",
+    "tiebreaker": "Mirror → Water → Fire"
+  }
+}
