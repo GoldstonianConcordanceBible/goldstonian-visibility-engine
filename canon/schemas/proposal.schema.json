@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Governance Proposal Schema",
+  "type": "object",
+  "required": ["proposal_id", "title", "author", "status"],
+  "properties": {
+    "proposal_id": { "type": "string" },
+    "title": { "type": "string" },
+    "author": { "type": "string" },
+    "status": {
+      "type": "string",
+      "enum": ["draft", "under_review", "approved", "rejected", "merged"]
+    },
+    "canon_version_target": { "type": "string" },
+    "evidence_links": {
+      "type": "array",
+      "items": { "type": "string" }
+    }
+  }
+}
