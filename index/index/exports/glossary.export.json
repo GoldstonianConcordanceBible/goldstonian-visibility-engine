@@ -1,0 +1,29 @@
+{
+  "canon_version": "0.1.0",
+  "terms": [
+    {
+      "term_id": "TERM-0001",
+      "term": "Canon",
+      "definition": "The versioned, authoritative corpus (doctrine, rules, glossary, claims).",
+      "provenance": { "source_type": "internal", "source_ref": "canon/GLOSSARY.md" }
+    },
+    {
+      "term_id": "TERM-0002",
+      "term": "Claim",
+      "definition": "A testable statement with provenance.",
+      "provenance": { "source_type": "internal", "source_ref": "canon/GLOSSARY.md" }
+    },
+    {
+      "term_id": "TERM-0003",
+      "term": "Provenance",
+      "definition": "Evidence chain: source → citation → commit → release → DOI.",
+      "provenance": { "source_type": "internal", "source_ref": "canon/GLOSSARY.md" }
+    },
+    {
+      "term_id": "TERM-0004",
+      "term": "Contribution-only governance",
+      "definition": "Participation framed as contributions, reviews, merges, and attestations — no ROI framing.",
+      "provenance": { "source_type": "internal", "source_ref": "governance/DAO_CHARTER.md" }
+    }
+  ]
+}
