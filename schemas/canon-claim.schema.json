@@ -1,0 +1,35 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "GCB Canon Claim",
+  "type": "object",
+  "required": ["claim_id", "statement", "confidence", "evidence", "canon_alignment"],
+  "properties": {
+    "claim_id": { "type": "string" },
+    "statement": { "type": "string", "minLength": 10 },
+    "confidence": { "type": "number", "minimum": 0, "maximum": 1 },
+    "evidence": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "canon-citation.schema.json" }
+    },
+    "counterpoints": { "type": "array", "items": { "type": "string" } },
+    "canon_alignment": {
+      "type": "object",
+      "required": ["mirror", "water", "fire"],
+      "properties": {
+        "mirror": { "type": "string" },
+        "water": { "type": "string" },
+        "fire": { "type": "string" }
+      }
+    },
+    "labels": { "type": "array", "items": { "type": "string" } },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "repo": { "type": "string" },
+        "commit": { "type": "string" },
+        "timestamp_utc": { "type": "string" }
+      }
+    }
+  }
+}
